@@ -1,20 +1,7 @@
-import {useState} from "react"
+import AppRoutes from "./routes/AppRoutes"
 
-function App(){
-
-
-  const [contador, setContador, tiraContador] = useState(0)
-  return (
-    <div>
-      <h1>Service Flow</h1>
-      <p>Contador: {contador}</p>
-      <button onClick={()=> setContador(contador + 1)}>Aumentar</button>
-      <button onClick={() => setContador (contador - 1)}>Diminuir</button>
-      <button onClick={() => setContador(0)}>Resetar</button>
-    </div>
-    
-  )
+function App() {
+  return <AppRoutes />
 }
-
 
 export default App
